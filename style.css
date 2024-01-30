@@ -1,0 +1,119 @@
+*{
+    border: 50px;
+}
+body{
+    background-image: url("./img/bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+}
+.main{
+    justify-content: center;
+    text-align: center;
+    background-image: url("./img/main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 30%;
+    margin-top: 7%;
+    padding: 30px;
+    width: 500px;
+    border-radius: 15px;
+}
+.main h1{
+    color: rgb(73, 0, 95);
+    font-weight: bold;
+}
+#item ul{
+    list-style-type:none ;
+}
+#item li{
+    padding: 20px;
+    border-left: 5px solid rgb(145, 145, 145);
+    margin: 20px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+#item li:hover{
+    border-left:5px solid rgb(79, 0, 116) ;
+}
+.delete{
+    float: right;
+    color: white;
+    border: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgb(79, 0, 116);
+    margin-top: -2%;
+    padding: 7px;
+    cursor: pointer;
+}
+.delete:hover{
+    color: rgb(79, 0, 116);
+    border: 2px solid rgb(79, 0, 116);
+    background-color: white;
+    padding: 7px;
+}
+#add{
+    margin-left: 80px;
+    padding: 20px;  
+}
+#add input{
+    padding: 10px;
+    width:250px;
+    margin-right: 20px;
+}
+#add button{
+    float: right;
+    margin-right: 30px;
+    background-color: rgb(255, 0, 119);
+    padding: 8px;
+    width: 50px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#add button:hover{
+    background-color: rgb(255, 59, 212);
+  
+}
+p{
+    color: rgb(196, 196, 196);
+    text-align: center;
+}
+@media only screen and (max-width: 600px){
+    .main{
+    margin-left: 7%;
+    margin-top: 60%;
+    width: 280px;
+    }
+    #item li{
+        width: 240px;
+        margin-left: -43px;
+    }
+    .name{
+        margin-left: -50px;
+        font-size: 18px;
+        text-align-last:justify ;
+    }
+    .delete{
+        margin-right: -10px;
+        margin-top: -8px;
+    }
+    #add{
+        margin-left: 5px;
+        padding: 20px;  
+    }
+    #add input{
+        padding: 10px;
+        width:150px;
+        margin-top: -10px;
+    }
+    #add button{
+        margin-top: 10px;
+        margin-right: 100px;
+    }
+
+}
